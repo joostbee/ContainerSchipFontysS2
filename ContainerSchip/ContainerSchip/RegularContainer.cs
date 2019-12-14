@@ -8,5 +8,9 @@ namespace ContainerSchip
 {
     class RegularContainer : Container
     {
+        public RegularContainer()
+        {
+
+        }
     }
 }

@@ -8,9 +8,9 @@ namespace ContainerSchip
 {
     class ContainerCollection
     {
-        private List<IContainer> ContainerList { get; } = new List<IContainer>();
+        private List<Container> ContainerList { get; } = new List<Container>();
 
-        public void AddContainer(IContainer container)
+        public void AddContainer(Container container)
         {
             ContainerList.Add(container);
         }

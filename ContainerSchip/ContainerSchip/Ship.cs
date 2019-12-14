@@ -10,6 +10,7 @@ namespace ContainerSchip
     {
         private int Width { get; } //in containers
         private int Length { get; } // in containers
+        private int Height { get; } // in containers
         private int MaximumWeight { get; } // in tonnes
         private int MinimumWeight { get; } // in tonnes
         private int[] ChilledRows { get; } // each row is x in the xyz notation for position
@@ -19,12 +20,13 @@ namespace ContainerSchip
 
         public Ship(int width, int length, int maxiumumWeight, int ratioMinimumWeight, int[] chilledRows)
         {
-            Width = width;
-            Length = length;
+            Width = 10;//width;
+            Length =  100//length;
+            Height = 100; //100 for z is an arbitrary maximum that should never be reached
             MaximumWeight = maxiumumWeight;
             MinimumWeight = maxiumumWeight * ratioMinimumWeight;
             ChilledRows = chilledRows;
-            Container[,,] Containers = new Container[Length, Width, 100]; //100 for z is an arbitrary maximum that should never be reached
+            Container[,,] Containers = new Container[Length, Width, Height];
         }
     }
 }

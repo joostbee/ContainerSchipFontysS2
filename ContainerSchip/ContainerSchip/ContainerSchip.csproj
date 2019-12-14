@@ -123,7 +123,6 @@
     <Compile Include="ChilledContainer.cs" />
     <Compile Include="Container.cs" />
     <Compile Include="ContainerCollection.cs" />
-    <Compile Include="IContainer.cs" />
     <Compile Include="RegularContainer.cs" />
     <Compile Include="Ship.cs" />
     <Compile Include="ShipContainerArrange.cs" />
